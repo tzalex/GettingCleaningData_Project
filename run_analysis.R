@@ -89,11 +89,11 @@ colnames(allData3) = colNames;
 allData4 = allData3[,names(allData3) != 'activityLabel'];
 
 # mean of each variable for each activity and each subject
-tidyData = aggregate(allData4[,names(allData4) != c('activityID','subjectID')], by=list(activityID=allData4$activityID,subjectID = allData4$subjectID),mean);
+tidyData = aggregate(allData4[,names(allData4) != c('activityID','subjectID')],by=list(activityID=allData4$activityID,subjectID = allData4$subjectID),mean);
 
 # add again "acitivityLabel" at the end of the table
-tidyData = merge(tidyData, activityLabels, by='activityID',all.x=TRUE);
+tidyData = merge(tidyData, activityLabels,by='activityID',all.x=TRUE);
 
 # export tidyData as a text file
-write.table(tidyData, './tidyData.txt', row.names=FALSE,sep='\t');
+write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
 #==========================================================================================
