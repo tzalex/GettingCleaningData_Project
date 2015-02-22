@@ -89,30 +89,32 @@ CHANGE NAMES, add acitivity label at the end of the table and rename column name
 ### Step 5
 AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT, mean of each variable for each activity and each subject and add again the activity label. Export tidyData as a text file (aggregate, write.table commands)
 
-activityLabels: data from the downloaded file "activity_labels"
+## run_analysis variables
 
-features: data from the downloaded file "features"
+1. activityLabels: data from the downloaded file "activity_labels"
 
-subjectTest: data from the downloaded file "subject_test" in the folder "test"
+2. features: data from the downloaded file "features"
 
-xTest: data from the downloaded file "X_test" in the folder "test"
+3. subjectTest: data from the downloaded file "subject_test" in the folder "test"
 
-yTest: data from the downloaded file "y_test" in the folder "test"
+4. xTest: data from the downloaded file "X_test" in the folder "test"
 
-subjectTrain: data from the downloaded file "subject_train" in the folder "train"
+5. yTest: data from the downloaded file "y_test" in the folder "test"
 
-xTrain: data from the downloaded file "X_train" in the folder "train"
+6. subjectTrain: data from the downloaded file "subject_train" in the folder "train"
 
-yTrain: data from the downloaded file "y_train" in the folder "train"
+7. xTrain: data from the downloaded file "X_train" in the folder "train"
 
-testData: xTest, yTest and subjectTest data
+8. yTrain: data from the downloaded file "y_train" in the folder "train"
 
-trainData: xTrain, yTrain and subjectTrain data
+9. testData: xTest, yTest and subjectTest data
 
-allData: testData and trainData
+10. trainData: xTrain, yTrain and subjectTrain data
 
-allData2: only the desired columns (mean and standard deviation)
+11. allData: testData and trainData
 
-allData3: add acitivity label at the end of the table in order to understand the activity
+12. allData2: only the desired columns (mean and standard deviation)
 
-tidyData: final data
+13. allData3: add acitivity label at the end of the table in order to understand the activity
+
+14. tidyData: final data
