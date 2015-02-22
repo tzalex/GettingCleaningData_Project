@@ -4,7 +4,7 @@
 ## Introduction
 After extracting the zip file "getdata-projectfiles-UCI HAR Dataset", a folder named "UCI HAR Dataset" is created. The folder contains two folders ("test" and "train") and four text files ("activity_labels", "features", "features_info" and "README").
 
-###From instructions:
+### Instructions:
 You should create one R script called run_analysis.R that does the following. 
 
 1. Merges the training and the test sets to create one data set.
