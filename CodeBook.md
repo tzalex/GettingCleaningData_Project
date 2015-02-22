@@ -88,6 +88,3 @@ allData: testData and trainData
 allData2: only the desired columns (mean and standard deviation)
 allData3: add acitivity label at the end of the table in order to understand the activity
 tidyData: final data
-
-
-
