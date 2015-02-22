@@ -33,20 +33,31 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 For each record it is provided:
 Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+
 Triaxial Angular velocity from the gyroscope.
+
 A 561-feature vector with time and frequency domain variables.
+
 Its activity label.
+
 An identifier of the subject who carried out the experiment.
 
 ###The dataset includes the following files:
 
 "README.txt"
+
 "features_info.txt": Shows information about the variables used on the feature vector.
+
 "features.txt": List of all features.
+
 "activity_labels.txt": Links the class labels with their activity name.
+
 "train/X_train.txt": Training set.
+
 "train/y_train.txt": Training labels.
+
 "test/X_test.txt": Test set.
+
 "test/y_test.txt": Test labels.
 
 
@@ -78,17 +89,29 @@ STEP 5
 AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT, mean of each variable for each activity and each subject and add again the activity label. Export tidyData as a text file (aggregate, write.table commands)
 
 activityLabels: data from the downloaded file "activity_labels"
+
 features: data from the downloaded file "features"
+
 subjectTest: data from the downloaded file "subject_test" in the folder "test"
+
 xTest: data from the downloaded file "X_test" in the folder "test"
+
 yTest: data from the downloaded file "y_test" in the folder "test"
+
 subjectTrain: data from the downloaded file "subject_train" in the folder "train"
+
 xTrain: data from the downloaded file "X_train" in the folder "train"
+
 yTrain: data from the downloaded file "y_train" in the folder "train"
 
 testData: xTest, yTest and subjectTest data
+
 trainData: xTrain, yTrain and subjectTrain data
+
 allData: testData and trainData
+
 allData2: only the desired columns (mean and standard deviation)
+
 allData3: add acitivity label at the end of the table in order to understand the activity
+
 tidyData: final data
