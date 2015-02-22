@@ -74,20 +74,20 @@ The following files are available for the train and test data. Their description
 ### Steps
 Based on the comments from the R file run_analysis:
 
-STEP 1
+#### STEP 1
 READ, read data from files (read.table command)
 
 NAME, name them with appropriate names (colnames command)
 
 MERGE, merge them to create one data set (cbind, rbind commands)
 
-STEP 2
+#### STEP 2
 MEAN AND STANDARD DEVIATION DATA, extract only the measurements with mean and standrard deviation (use of a logical vector to select specific columns)
 
-STEP 3 and STEP 4
+#### STEP 3 and STEP 4
 CHANGE NAMES, add acitivity label at the end of the table and rename column names (gsub command)
 
-STEP 5
+#### STEP 5
 AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT, mean of each variable for each activity and each subject and add again the activity label. Export tidyData as a text file (aggregate, write.table commands)
 
 activityLabels: data from the downloaded file "activity_labels"
