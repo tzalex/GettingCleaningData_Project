@@ -66,6 +66,6 @@ AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT, mean of each variab
 
 12. allData2: only the desired columns (mean and standard deviation)
 
-13. allData3: add acitivity label at the end of the table in order to understand the activity
+13. allData3: add acitivity label at the end of the table to understand the activity (WALKING, STANDING, etc)
 
 14. tidyData: final data
