@@ -66,18 +66,18 @@ colNames  = colnames(allData3);
 # rename column names
 for (i in 1:length(colNames)) 
 {
-  colNames[i] = gsub("\\()","", colNames[i])
+  colNames[i] = gsub("\\()","",colNames[i])
   colNames[i] = gsub("-mean","_Mean",colNames[i])
   colNames[i] = gsub("-std$","_StandardDeviation",colNames[i])
   colNames[i] = gsub("^(t)","Time",colNames[i])
   colNames[i] = gsub("^(f)","Frequency",colNames[i])
-  colNames[i] = gsub("[Gg]yro","Gyro",colNames[i])
+  colNames[i] = gsub("[Gg]yro","Gyroscope",colNames[i])
   colNames[i] = gsub("([Gg]ravity)","Gravity",colNames[i])
   colNames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
   colNames[i] = gsub("AccMag","AccelarationMagnitude",colNames[i])
   colNames[i] = gsub("([Bb]odyaccjerkmag)","BodyAccelarationJerkMagnitude",colNames[i])
   colNames[i] = gsub("JerkMag","JerkMagnitude",colNames[i])
-  colNames[i] = gsub("GyroMag","GyroMagnitude",colNames[i])
+  colNames[i] = gsub("GyroMag","GyroscopeMagnitude",colNames[i])
 };
 
 # update colNames
