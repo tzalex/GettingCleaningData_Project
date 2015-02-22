@@ -95,5 +95,5 @@ tidyData = aggregate(allData4[,names(allData4) != c('activityID','subjectID')],b
 tidyData = merge(tidyData,activityLabels,by='activityID',all.x=TRUE);
 
 # export tidyData as a text file
-write.table(tidyData, './tidyData.txt',row.names=TRUE,sep='\t');
+write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
 #==========================================================================================
