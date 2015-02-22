@@ -1,10 +1,9 @@
-#CODEBOOK
 #Getting and Cleaning Data, Third week project
 
 ## Introduction
 After extracting the zip file "getdata-projectfiles-UCI HAR Dataset", a folder named "UCI HAR Dataset" is created. The folder contains two folders ("test" and "train") and four text files ("activity_labels", "features", "features_info" and "README").
 
-### Instructions:
+## Instructions:
 You should create one R script called run_analysis.R that does the following
 
 1. Merges the training and the test sets to create one data set
@@ -25,7 +24,7 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-### Data Set Information
+## Data Set Information
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -42,7 +41,7 @@ For each record it is provided:
 
 5. An identifier of the subject who carried out the experiment
 
-###The dataset includes the following files:
+##The dataset includes the following files:
 
 1. "README.txt"
 
@@ -71,23 +70,23 @@ The following files are available for the train and test data. Their description
 
 4. "train/Inertial Signals/body_gyro_x_train.txt": The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-### Steps
+## Steps
 Based on the comments from the R file run_analysis:
 
-#### Step 1
+### Step 1
 READ, read data from files (read.table command)
 
 NAME, name them with appropriate names (colnames command)
 
 MERGE, merge them to create one data set (cbind, rbind commands)
 
-#### Step 2
+### Step 2
 MEAN AND STANDARD DEVIATION DATA, extract only the measurements with mean and standrard deviation (use of a logical vector to select specific columns)
 
-#### Step 3 and Step 4
+### Step 3 and Step 4
 CHANGE NAMES, add acitivity label at the end of the table and rename column names (gsub command)
 
-#### Step 5
+### Step 5
 AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT, mean of each variable for each activity and each subject and add again the activity label. Export tidyData as a text file (aggregate, write.table commands)
 
 activityLabels: data from the downloaded file "activity_labels"
