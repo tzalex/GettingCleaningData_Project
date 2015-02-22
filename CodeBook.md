@@ -5,17 +5,17 @@
 After extracting the zip file "getdata-projectfiles-UCI HAR Dataset", a folder named "UCI HAR Dataset" is created. The folder contains two folders ("test" and "train") and four text files ("activity_labels", "features", "features_info" and "README").
 
 ### Instructions:
-You should create one R script called run_analysis.R that does the following. 
+You should create one R script called run_analysis.R that does the following
 
-1. Merges the training and the test sets to create one data set.
+1. Merges the training and the test sets to create one data set
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+2. Extracts only the measurements on the mean and standard deviation for each measurement
 
 3. Uses descriptive activity names to name the activities in the data set
 
-4. Appropriately labels the data set with descriptive variable names. 
+4. Appropriately labels the data set with descriptive variable names
 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 
 A full description is available at the site where the data was obtained: 
@@ -32,33 +32,33 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See "features_info.txt" for more details. 
 
 For each record it is provided:
-1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration
 
-2. Triaxial Angular velocity from the gyroscope.
+2. Triaxial Angular velocity from the gyroscope
 
-3. A 561-feature vector with time and frequency domain variables.
+3. A 561-feature vector with time and frequency domain variables
 
-4. Its activity label.
+4. Its activity label
 
-5. An identifier of the subject who carried out the experiment.
+5. An identifier of the subject who carried out the experiment
 
 ###The dataset includes the following files:
 
 1. "README.txt"
 
-2. "features_info.txt": Shows information about the variables used on the feature vector.
+2. "features_info.txt": Shows information about the variables used on the feature vector
 
-3. "features.txt": List of all features.
+3. "features.txt": List of all features
 
-4. "activity_labels.txt": Links the class labels with their activity name.
+4. "activity_labels.txt": Links the class labels with their activity name
 
-5. "train/X_train.txt": Training set.
+5. "train/X_train.txt": Training set
 
-6. "train/y_train.txt": Training labels.
+6. "train/y_train.txt": Training labels
 
-7. "test/X_test.txt": Test set.
+7. "test/X_test.txt": Test set
 
-8. "test/y_test.txt": Test labels.
+8. "test/y_test.txt": Test labels
 
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
