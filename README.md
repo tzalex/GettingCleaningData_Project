@@ -3,6 +3,7 @@
 ## Introduction
 
 Coursera, Getting and Cleaning Data, Course Project
+
 This repository contains the R code for the analysis of the data and a CodeBook.md file.
 
 A full description is available at the site where the data was obtained: 
