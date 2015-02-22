@@ -1,5 +1,5 @@
-CODEBOOK
-Getting and Cleaning Data, Third week project
+#CODEBOOK
+#Getting and Cleaning Data, Third week project
 
 After extracting the zip file "getdata-projectfiles-UCI HAR Dataset", a folder named "UCI HAR Dataset" is created. The folder contains 2 folders ("test" and "train") and 4 text files ("activity_labels", "features", "features_info" and "README").
 
