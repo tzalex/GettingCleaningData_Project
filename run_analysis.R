@@ -48,7 +48,7 @@ allData = rbind(testData,trainData);
 # column names from "allData" table
 colNames = colnames(allData); 
  
-# create a logical vector (LV): TRUE for columns ID, mean and stddev and
+# create a logical vector (LV): TRUE for columns ID, mean and standard deviation and
 # FALSE for anything else
 LV = (grepl("activity..",colNames) | grepl("subject..",colNames) | grepl("-mean..",colNames) & !grepl("-meanFreq..",colNames) & !grepl("mean..-",colNames) | grepl("-std..",colNames) & !grepl("-std()..-",colNames));
 
