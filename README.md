@@ -22,7 +22,6 @@ R file "run_analysis.R" should be in the same folder with the "UCI HAR Dataset" 
 
 ## How the script ("run_analysis.R") works
 
-## Steps
 Based on the comments from the R file run_analysis:
 
 ### Step 1
