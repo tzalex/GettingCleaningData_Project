@@ -9,7 +9,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Here are the data for the project: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Files
+## Files
 
 R file "run_analysis.R" should be in the same folder with the "UCI HAR Dataset" folder (NOT inside the folder "UCI HAR Dataset")
 
