@@ -76,7 +76,9 @@ Based on the comments from the R file run_analysis:
 
 STEP 1
 READ, read data from files (read.table command)
+
 NAME, name them with appropriate names (colnames command)
+
 MERGE, merge them to create one data set (cbind, rbind commands)
 
 STEP 2
