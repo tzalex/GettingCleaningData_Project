@@ -4,23 +4,23 @@
 # READ
 
 # data from files in "UCI HAR Dataset" folder
-activityLabels = read.table('./UCI HAR Dataset/activity_labels.txt',header=FALSE);
-features = read.table('./UCI HAR Dataset/features.txt',header=FALSE);
+activityLabels = read.table('./UCI HAR Dataset/activity_labels.txt', header=FALSE);
+features = read.table('./UCI HAR Dataset/features.txt', header=FALSE);
 
 # data from files in "test" folder
-subjectTest = read.table('./UCI HAR Dataset/test/subject_test.txt',header=FALSE);
-xTest = read.table('./UCI HAR Dataset/test/X_test.txt',header=FALSE);
-yTest = read.table('./UCI HAR Dataset/test/y_test.txt',header=FALSE);
+subjectTest = read.table('./UCI HAR Dataset/test/subject_test.txt', header=FALSE);
+xTest = read.table('./UCI HAR Dataset/test/X_test.txt', header=FALSE);
+yTest = read.table('./UCI HAR Dataset/test/y_test.txt', header=FALSE);
 
 # data from files in "train" folder
-subjectTrain = read.table('./UCI HAR Dataset/train/subject_train.txt',header=FALSE);
-xTrain = read.table('./UCI HAR Dataset/train/X_train.txt',header=FALSE);
-yTrain = read.table('./UCI HAR Dataset/train/y_train.txt',header=FALSE);
+subjectTrain = read.table('./UCI HAR Dataset/train/subject_train.txt', header=FALSE);
+xTrain = read.table('./UCI HAR Dataset/train/X_train.txt', header=FALSE);
+yTrain = read.table('./UCI HAR Dataset/train/y_train.txt', header=FALSE);
 #==========================================================================================
 # NAME
 
 # acivity_labels data
-colnames(activityLabels)  = c('activityID','activityLabel');
+colnames(activityLabels) = c('activityID','activityLabel');
 
 # test data
 colnames(subjectTest) = "subjectID";
