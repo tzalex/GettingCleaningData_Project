@@ -4,18 +4,18 @@
 # READ
 
 # data from files in "UCI HAR Dataset" folder
-activityLabels = read.table('./UCI HAR Dataset/activity_labels.txt', header=FALSE);
-features = read.table('./UCI HAR Dataset/features.txt', header=FALSE);
+activityLabels = read.table('./UCI HAR Dataset/activity_labels.txt',header=FALSE);
+features = read.table('./UCI HAR Dataset/features.txt',header=FALSE);
 
 # data from files in "test" folder
-subjectTest = read.table('./UCI HAR Dataset/test/subject_test.txt', header=FALSE);
-xTest = read.table('./UCI HAR Dataset/test/X_test.txt', header=FALSE);
-yTest = read.table('./UCI HAR Dataset/test/y_test.txt', header=FALSE);
+subjectTest = read.table('./UCI HAR Dataset/test/subject_test.txt',header=FALSE);
+xTest = read.table('./UCI HAR Dataset/test/X_test.txt',header=FALSE);
+yTest = read.table('./UCI HAR Dataset/test/y_test.txt',header=FALSE);
 
 # data from files in "train" folder
-subjectTrain = read.table('./UCI HAR Dataset/train/subject_train.txt', header=FALSE);
-xTrain = read.table('./UCI HAR Dataset/train/X_train.txt', header=FALSE);
-yTrain = read.table('./UCI HAR Dataset/train/y_train.txt', header=FALSE);
+subjectTrain = read.table('./UCI HAR Dataset/train/subject_train.txt',header=FALSE);
+xTrain = read.table('./UCI HAR Dataset/train/X_train.txt',header=FALSE);
+yTrain = read.table('./UCI HAR Dataset/train/y_train.txt',header=FALSE);
 #==========================================================================================
 # NAME
 
@@ -66,7 +66,7 @@ colNames  = colnames(allData3);
 # rename column names
 for (i in 1:length(colNames)) 
 {
-  colNames[i] = gsub("\\()","",colNames[i])
+  colNames[i] = gsub("\\()","", colNames[i])
   colNames[i] = gsub("-mean","_Mean",colNames[i])
   colNames[i] = gsub("-std$","_StandardDeviation",colNames[i])
   colNames[i] = gsub("^(t)","Time",colNames[i])
@@ -89,11 +89,11 @@ colnames(allData3) = colNames;
 allData4 = allData3[,names(allData3) != 'activityLabel'];
 
 # mean of each variable for each activity and each subject
-tidyData = aggregate(allData4[,names(allData4) != c('activityID','subjectID')],by=list(activityID=allData4$activityID,subjectID = allData4$subjectID),mean);
+tidyData = aggregate(allData4[,names(allData4) != c('activityID','subjectID')], by=list(activityID=allData4$activityID,subjectID = allData4$subjectID),mean);
 
 # add again "acitivityLabel" at the end of the table
-tidyData = merge(tidyData,activityLabels,by='activityID',all.x=TRUE);
+tidyData = merge(tidyData, activityLabels, by='activityID',all.x=TRUE);
 
 # export tidyData as a text file
-write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
+write.table(tidyData, './tidyData.txt', row.names=FALSE,sep='\t');
 #==========================================================================================
