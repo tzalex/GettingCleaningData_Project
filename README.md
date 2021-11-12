@@ -14,7 +14,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## Files
 
-R file "run_analysis.R" should be in the same folder with the "UCI HAR Dataset" folder (NOT inside the folder "UCI HAR Dataset")
+R file "run_analysis.R" should be in the same folder with the "UCI HAR Dataset" folder (NOT in the folder "UCI HAR Dataset")
 
 "CodeBook.md" describes the variables, the data, and any transformations or work that was performed to clean up the data
 
